@@ -1,0 +1,30 @@
+- [网页68 ナビ LP Figma 构建](figma-web68-navi-build.md) — Figma 文件 wk7kUZfC7dGAv6NpW7UsCv 中三个 section 的节点 ID、流程接线与字体替代
+- [HB Switch 4WAY 摇杆手把](figma-hb-switch-4way.md) — 上下左右2型手把的组件 ID、"刻印≠按钮"规则与平面倾斜表现 6 手法
+- [Section 1 の三案（A/B/C）と全面改修](figma-section1-three-proposals.md) — スライド式／プロトタイプ式／混合型の節点ID、C案の実遷移マップ、use_figma の落とし穴
+- [ナビ紹介フレームの確定レイアウトグリッド](figma-navi-frame-layout-spec.md) — PC/SP の全 y 座標、「変わる情報を大きく」の階層ルール、監査で直した実測ずれ
+- [4方向の監査と v2 セクション](figma-4directions-v2-audit.md) — スティック実例の残留リアクション、LP ボタンが押せない上流バグ、v2〜v3 の節点IDと確定値、SP 四形式の座標と当たり判定の導出、SP 86枚のスマホ位置ずれ修正と「機器は役割ラベルに中央揃え」規則
+- [iOS版セクションの Android→iOS 変換](figma-ios-conversion-section.md) — 赤枠12画面の iOS 化ルール、新規節点ID、Hiragino が読み込めない制約と回避策
+- [サインインflowのiOS版（_iosセクション）](figma-signin-flow-ios.md) — 43画面の変換規則、既存iOS版の再利用、iOSアラート作成の落とし穴3つ
+- [PH1 三段適配（断点と実測不具合）](figma-ph1-responsive-plan.md) — 768/1024/1280 の根拠、SP の 9 件、TAB が SP 引き伸ばしである証拠
+- [Garage の Dark 化と自作 Dynamic Island](figma-garage-dark-dynamic-island.md) — ライブラリ Light/Dark モードの ID、Garage_Circle だけ手動、島の実測値とインスタンス内制約の回避（padding／visible）
+- [Mockup 模拟景深的滤镜分级](figma-mockup-dof-filter-grade.md) — 调整后dark/light 的图层堆栈、四级散焦板滤镜数值与「压高光不提阴影」的理由
+- [調整後OFF RIDE の PC/TAB/SP 三版](figma-offride-3versions.md) — 12 枚の節点ID と s/ox/oy、TAB garage でタブバーを切った理由、景深板の端 0 余白で出る明るい帯と ride 最終行の明線
+- [v5 案④ モーダル×スライド式の改修](figma-v5-plan4-modal-slide.md) — 見出し削除とSPカード化の20枚分の節点ID・確定定数・幅がボトルネックという算出
+- [マップ標識の英語ロケール統一（止まれ→八角形STOP）](figma-map-sign-english-locale.md) — 変換レシピ、対応済み6枚と未対応15件のノードID、同名セクションの新旧見分け
+- [Gen1 vs Gen2 比較モーダル 7方向](figma-gen1gen2-compare-modal.md) — 案A〜G の節点ID、参考モーダル(v5)の chrome 実測値、SECTION 子の座標系の罠
+- [gen2 人物遮蔽のクリア領域実測](figma-gen2-rider-occlusion.md) — 台形プロファイルの数値、297幅は収まらないという結論、差分スクショでの計測レシピ
+- [gen1 左上ステータスアイコンの追加](figma-gen1-status-icons.md) — 参考.ai は中身PDF+ビットマップ、cv2 でのベクター化、vectorPaths がカンマ非対応という罠、6枚のノードID
+- [案G採用版の TAB/SP 展開](figma-plang-adopted-tab-sp.md) — 採用デザインの4点セットと3ブレークポイントの確定値、納品セクションの節点ID、Light/Dark の階層差
+- [主要工作の監査と改修案（2026-09-17）](roadsync-modal-review-2026-09-17.md) — SP 全画面シートの確定寸法、PC 560 化の式（隙間で稼ぐ）、Gen1/Gen2「同じ場面の2枚」、反証で落ちた案、判断待ちと Honda 確認事項、artifact URL、Light 版の確定値と「明るい地では透過の知覚が 15 分の 1」、端末 UI を変数モードで Dark 統一する手順、プロトタイプ 60 枚監査 23 件（速度計が断点固定／PC 進捗が index 依存／Dynamic Island が step で出入り／SP の背景露出 2.8%）、役割ラベルは全ステップ廃止（機器帯 SP/TAB −5・PC +17）、機器の行はスイッチが幅を埋めメーターに寄せる（SP 112→58）・Light 刻印の残存色、終稿前にメーターとスマホの突き合わせで直した 5 件、独立複核後の確定値（速度 50・制限 60・残り 16→10 km・車線は 06 だけ・Dark も昼地図）、09-28 ロック全解除・01 の戻る削除・説明文の食い込み修正・09 スマホ地図を東京一般道ルートに差し替え・meter/phone 改名で Smart Animate 成立・スクリム閉じ・定稿記録 artifact は消失、見出し/説明文を削除しフレーム名を sp-dark-1 形式に（仕様記録はこのメモのみ）、Dark のスマホ UI を暫定で Light に統一（実在確認はユーザー待ち）
+- [比較モーダル最新版（案④準拠）](figma-compare-modal-plan4-final.md) — 現在 48 枚（6 フロー × 8）、自動再生なし、② は FUNC▲▼ で ホーム›ナビ›音楽›電話›メッセージ、メーターは全部 297:183 の箱・英語・共通の場面（57 km/h・3 速・12:32、Gen2/Meter/* は Arch の枠＋NewVisual APP を SVG で 1:1）、照明は案④ Navi 原型の照明キット、見出しは左上に小さく淡く・操作ヒントが中央の主役、場面セグメントは Gen2 ラベル行でメーター右端揃え、「マップ」表記、FUNC▲▼ は両方に Compare/FUNC key（hover/press）、5way 枠は矢印中心、Gen1 枠は淡い破線、直せない元ファイル側の問題、Honda 確認事項、10-14 複核：Avenir Next 欠落で拡大インスタンスの時計が「12.32」→母版アウトライン化、SP/TAB ② の下余白ならし、空の反射の下端フェード（マスク）、注記線は整数 px＋不透明
+- [案④ スイッチ黒統一と SP 比率案](roadsync-modal-review-2026-09-28-switch-sp.md) — Light スイッチを実機の黒に（環境層は Light 維持）、SP/TAB は A 案で確定（SP 手機 124・スイッチ 178／TAB 152・218、共通の床、メーター→スイッチの距離は承知済み）と relayout 手順、全体監査の結果
+- [案④ Call 原型と LP 対象者監査](figma-call-prototype-plan4.md) — Call ページ 3614:67472 の構成・部品・48 枚、swap の罠、「原型は Gen2 の画」「着信が spec に無い」など初心者・検討者視点の監査結論、重組草案採用で Navi 6 手／Call 5 手（各手で画面か操作が必ず変わる決まり、Navi ⑦＝到着して案内終了）・左上チップ・スマホ注視の注記・遷移図の採否理由と要約、部品は「作業用 · 案④ Navi / Call 部品」ページ、2026-09-30 定稿（句読点なしキャプション・PC 注記はチップと同じ行・進捗は章内の再生位置・着信メーターは名前を大きく）
+- [Gen2 メーターシミュレーターと FUNC＝ランチャー](gen2-meter-simulator-launcher.md) — ~/Desktop/シミュレーター の場所、FUNC はランチャーで画面切替（地図切替ではない）、アイコン ID、最新デザインは Figma「5inch TYPE-0＋APP」
+- [NewVisual＝メーター画面の正本（編集禁止）](newvisual-roadsync-ui-source.md) — J3lGEFLlvNiT9isNbejL1D のページ ID・使った実画面ノード・読むだけの取り方、upload が 400×300 で切り抜く罠、メーターのランチャーは無い
+- [iOS/Android フレーバーバッジ納品（終稿）](figma-ios-flavour-ribbons.md) — 納品 3 section（部品 master 3819:16698 / ios 3793:12024 / android 3813:14502）の節点ID、参考どおり「各枠は母版インスタンス 1 つ」、リボン幾何・色、Archivo Black、monochrome はブーリアン焼き込み、LUMINANCE マスク不可などの罠
+- [2026-10-02 全面監査の中断と再開](audit-2026-10-02-full-audit-resume.md) — 資料の置き場 ~/Desktop/PH2/_audit-2026-10-02、ワークフロー台本と run ID、U+2028／20KB／fetch 無しの罠、部品 5 つが置き場の枠外
+- [PH1 ナビ・電話の「使い方を見る +」](ph1-dark-nav-intro-button.md) — 正本は Navi ページの PH1_dark最新/PH1_light最新（参考色々の PH1 は旧コピー）、配置＝右上機能アイコンの左隣 12px・グリフ中心、原型 closed 帧と全背景差し替え、書き出しのモード罠
+- [使い方モーダル第2轮（注意文・序幕・Gen2解禁）](howto-modal-round2-prologue-note.md) — 注意文「走行中はスマホを見ないでください」＋icon/caution、PC は芯片下 P1、序幕 -0 の12帧と接线、Gen2 タイル解禁、ボタン配置案、10-09 ユーザーの貼り直し（全 ID 4046・LP URL とフロー起点が切れる罠）、Dark 序幕を正に Light へ反映、手把は建模寄せベクター set 4150:88038（10-14 現行、前案 4072:51577）、序章の精細調整値
+- [類似機能サイト調査（2026-10-07）](similar-sites-research-2026-10-07.md) — 使い方シミュレーター・序章・対応モデル/世代差・＋ボタンの参考 URL と要点
+- [新ファイルの編集範囲](figma-new-file-edit-scope.md) — 10-14〜 作業先は GqdgJEkRaGIhRbvzvIKX6V、書き込みは「⎿ 紹介機能｜Navigation／Call」（＋比較ページ）だけ、手把 Gen2 寄せ set・ui / paddle set・Apple 型フッター（進捗＝非選択は文字・選択はバー）・Call ドロワー section、GitHub 移行は後で、強調色は「前へ」だけ・進捗は単色、Design｜PH2 も編集可（ON-RIDE Light・Gen2 タイル）、入口案の比較 artifact、テーマ切替の車灯スイッチ案、第 7 便（ドロワー左 12・ON-RIDE を OFF と同輝度・入口案を 1 section に統合・比較ページ案 9/11/12 を「要点 2 行」へ・車灯 v2 を 8 variant＋単体アイコン）、第 8 便（テーマ切替の文字掃除・単体は点灯/消灯の記号・ON-RIDE 暗角・入口案 7 つに・手把 Gen2 寄せ＋傾き・案11 追従ピル原型〈rail の Sticky は手動〉）、第 9 便（ON-RIDE 暗角を OFF からコピー・記号をハイ/ローで描き直し・スライドスイッチ v3・手把の外周撤去と傾き強調・案11 は普通のピル）、第 10 便（手把を第 8 便へ戻し Gen2 建模の色・ON-RIDE は検討 V1・案11 原型は変数モード復元と対応モデル到着で動き出す track）、第 11 便（入口案の説明をカード＋UX 4 軸の表に・Navigation は TAB を保留 section へ）、第 12 便（GitHub 用の引き継ぎフォルダ ~/Desktop/PH2/roadsync-figma-handoff・ユーザーが section 名を空にした／PC2 へ移動）
+- [HONDAサービスサイトの比較モーダル制作先](honda-service-site-gen-compare-page.md) — 2026-10-14〜 編集は「⎿ Gen1とGen2の違い」5414:64918 だけ・形式維持、部品は wk7k ライブラリ由来（母版修正は公開が必要）、按钮摆放 5 案と Section 1111 進捗参考、10-14 反映（A+D 統合文案・rail ラベル B・カプセル進捗・TAB/SP ゆったり・5 案の論点カード）、第 2 便（Navi と同じフッター、② SP/TAB の左右対称・タグ↔本体の上下同距離、① TAB メーター 400）
