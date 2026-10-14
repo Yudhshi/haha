@@ -50,4 +50,4 @@
 - interactive component の「一定時間後に戻る」は variant に `setReactionsAsync([{trigger:{type:'AFTER_TIMEOUT', timeout}, actions:[{type:'NODE', navigation:'CHANGE_TO', destinationId: 中立 variant, transition:{type:'SMART_ANIMATE', easing:{type:'GENTLE'}, duration}}]}])` で設定できる。
 - 楕円の点を伸ばすと楕円のまま潰れる → 角丸矩形（r = 高さ/2）に作り替えてから幅を変える（名前は同じにして Smart Animate を保つ）。
 - `use_figma` の中で `node.screenshot()` を何回も呼ぶと、返ってこない画像がある → 確認は `get_screenshot` で。
-
+- フロー起点のフレームを clone すると、**同名のフロー起点が自動で増える**（検討用の複製や案11 のオーバーレイがフロー一覧に混ざる）。複製したら `flowStartingPoints` を確認し、本来の section の外を指すものを外す。
