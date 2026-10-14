@@ -51,3 +51,7 @@
 - 楕円の点を伸ばすと楕円のまま潰れる → 角丸矩形（r = 高さ/2）に作り替えてから幅を変える（名前は同じにして Smart Animate を保つ）。
 - `use_figma` の中で `node.screenshot()` を何回も呼ぶと、返ってこない画像がある → 確認は `get_screenshot` で。
 - フロー起点のフレームを clone すると、**同名のフロー起点が自動で増える**（検討用の複製や案11 のオーバーレイがフロー一覧に混ざる）。複製したら `flowStartingPoints` を確認し、本来の section の外を指すものを外す。
+- 別ページの instance を clone して持ち込むと、**元の frame に付けた明示の変数モード（例 Semantic=Dark）とリモート変数のバインド**も付いてくる → Light 側で白文字のまま。`clearExplicitVariableModeForCollection` で解除し、色はローカル変数に付け替える。
+- `importComponentByKeyAsync` は未公開のライブラリ部品では「not found」→ 既存の instance を clone する。
+- `node.screenshot()` は子 frame 単体だと section の変数モードや地の色を引き継がない（Dark が白地に白文字で写る）→ 地色付きの一時 frame に入れ、明示モードを付けて撮る。
+\n
