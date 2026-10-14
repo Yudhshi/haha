@@ -18,6 +18,7 @@
 7. [`docs/05_decision-log.md`](docs/05_decision-log.md)：2026-10-14 の作業履歴（第 1〜11 便）
 8. [`docs/07_figma-plugin-gotchas.md`](docs/07_figma-plugin-gotchas.md)：use_figma（Plugin API）の落とし穴
 9. [`docs/08_methods.md`](docs/08_methods.md)：明るさの実測・画素差分・UX 評価カードのやり方
+10. [`docs/09_audit-2026-10-14.md`](docs/09_audit-2026-10-14.md)：3 ページの全面監査の結果（直すべき点の一覧）
 10. [`memory/`](memory/)：作業中に書き溜めた詳細ノート（原文のまま。古い経緯も含む）
 
 ## フォルダ構成
