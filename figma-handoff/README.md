@@ -9,6 +9,8 @@
 
 ## 最初に読む順番
 
+0. [`docs/10_next-steps.md`](docs/10_next-steps.md)：**続きを始めるならまずここ**（進行中の依頼と手順）
+
 1. [`CLAUDE.md`](CLAUDE.md)：Claude Code 向けの作業規則（編集してよい範囲・やってはいけないこと・進め方）。**必読**
 2. [`docs/01_project-overview.md`](docs/01_project-overview.md)：何を作っているか、全体像
 3. [`docs/02_figma-map.md`](docs/02_figma-map.md)：ファイル・ページ・section・部品の節点 ID 一覧
