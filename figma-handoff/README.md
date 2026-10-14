@@ -9,6 +9,8 @@
 
 ## 最初に読む順番
 
+0. [`docs/10_next-steps.md`](docs/10_next-steps.md)：**続きを始めるならまずここ**（進行中の依頼と手順）
+
 1. [`CLAUDE.md`](CLAUDE.md)：Claude Code 向けの作業規則（編集してよい範囲・やってはいけないこと・進め方）。**必読**
 2. [`docs/01_project-overview.md`](docs/01_project-overview.md)：何を作っているか、全体像
 3. [`docs/02_figma-map.md`](docs/02_figma-map.md)：ファイル・ページ・section・部品の節点 ID 一覧
@@ -18,6 +20,7 @@
 7. [`docs/05_decision-log.md`](docs/05_decision-log.md)：2026-10-14 の作業履歴（第 1〜11 便）
 8. [`docs/07_figma-plugin-gotchas.md`](docs/07_figma-plugin-gotchas.md)：use_figma（Plugin API）の落とし穴
 9. [`docs/08_methods.md`](docs/08_methods.md)：明るさの実測・画素差分・UX 評価カードのやり方
+10. [`docs/09_audit-2026-10-14.md`](docs/09_audit-2026-10-14.md)：3 ページの全面監査の結果（直すべき点の一覧）
 10. [`memory/`](memory/)：作業中に書き溜めた詳細ノート（原文のまま。古い経緯も含む）
 
 ## フォルダ構成
