@@ -54,4 +54,3 @@
 - 別ページの instance を clone して持ち込むと、**元の frame に付けた明示の変数モード（例 Semantic=Dark）とリモート変数のバインド**も付いてくる → Light 側で白文字のまま。`clearExplicitVariableModeForCollection` で解除し、色はローカル変数に付け替える。
 - `importComponentByKeyAsync` は未公開のライブラリ部品では「not found」→ 既存の instance を clone する。
 - `node.screenshot()` は子 frame 単体だと section の変数モードや地の色を引き継がない（Dark が白地に白文字で写る）→ 地色付きの一時 frame に入れ、明示モードを付けて撮る。
-\n
