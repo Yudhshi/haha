@@ -18,6 +18,16 @@
 - `COMPONENT_SET` の子には COMPONENT しか入れられない（地の矩形を set の中に置けない → set の後ろに別の矩形）。
 - 複数サイズの variant を Smart Animate でつなぐと instance の左上が基準になる。下端を揃えたいなら variant を同じ大きさにして中身を下揃え。
 
+- **ページをまたいで clone すると、プロトタイプの遷移先（NODE の destinationId）が消える**（元ページの frame を指していたものは null になる。CHANGE_TO は残る）。複製後に、原本と複製の層の木を同じ順にたどって、原本の reactions を読み、行き先を複製の ID に置き換えて `setReactionsAsync` で付け直す（第 14 便）。
+- オーバーレイの中で別の frame へ移るときは `navigation: 'SWAP'`。NAVIGATE だとオーバーレイが閉じて下の画面が入れ替わる。閉じるは `{ type: 'CLOSE' }`。
+- instance の反応は、母版の**子の層**に付いていることがある（例：案11 のピルは子の `surface`）。instance 側で上書きするときは同じ名前の子（`I…;…` の ID）に `setReactionsAsync`。
+
+## 書き出し・画像
+
+- **入れ子の frame を単体で書き出すと、親の背景が付かない**。PH2 の 1 画面（Frame 13 など）は透明で、暗い地は外側の PC frame の塗り。`exportAsync` や `get_screenshot({contentsOnly:true})` だと白い文字が明るい地に乗って消える。→ clone して、いちばん近い塗りのある祖先の fills（変数の割り当てごと）を clone に移し、Semantic のモードを明示してから書き出す。`get_screenshot` は `contentsOnly:false` なら親ごと正しく描かれる。
+- `figma.createImage(bytes)`（同期）は使える。`exportAsync` の PNG をそのまま渡して画像の塗りにできる（`createImageAsync` は不可）。
+- クラウド環境からは figma.com の画像 URL に curl できない（プロキシで拒否）。`get_screenshot` に `enableBase64Response: true` を付けると、画像がセッションの tool-results フォルダに PNG で保存されるので、それを numpy で比べる。
+
 ## 描画・効果
 
 - `vectorPaths` の data は**数値を空白区切り**（`M 3 8 L 8 8`）。`H`・`V` は不可、カンマも不可。

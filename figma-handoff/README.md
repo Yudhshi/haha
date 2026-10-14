@@ -56,16 +56,9 @@ roadsync-figma-handoff/
 - Figma MCP（`use_figma`・`get_screenshot`・`get_metadata`）と Figma の `figma-use` スキル
 - Python 3 ＋ Pillow ＋ numpy（`scripts/measure_brightness.py` 用）
 
-## GitHub へ上げる手順（例）
+## リポジトリ
 
-```bash
-cd roadsync-figma-handoff
-git init
-git add .
-git commit -m "Add Figma handoff context for Honda RoadSync PH2"
-git remote add origin <your-repo-url>
-git push -u origin main
-```
+GitHub `Yudhshi/haha` の `figma-handoff/` に置いてある（上の構成図の `roadsync-figma-handoff/` はこのフォルダのこと）。リポジトリ直下の `.claude/settings.json` で Figma MCP のツールを許可済み（毎回の確認なし）。
 
 画像（assets/）は合計約 5MB。不要なら消してもドキュメントは読めます。
 
